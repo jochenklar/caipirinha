@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'oidc_provider',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -100,3 +101,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+SITE_URL = 'http://localhost:8000'
+LOGIN_URL = '/accounts/login/'
+OIDC_RSA_KEY_FOLDER = BASE_DIR
