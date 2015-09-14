@@ -1,0 +1,16 @@
+caipirinha/local.py
+
+static_root
+media_root
+
+*.pyc
+*~
+*.swp
+.DS_Store
+
+env
+
+*.sqlite3
+
+.coverage
+htmlcov
