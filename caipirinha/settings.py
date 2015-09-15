@@ -10,10 +10,12 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # 3rd party modules
-#    'rest_framework',
-#    'widget_tweaks',
+    'rest_framework',
+    'widget_tweaks',
     'oidc_provider',
     # caipirinha modules
+    'core',
+    'registration'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -40,6 +42,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'core.context_processors.settings'
             ],
         },
     },
