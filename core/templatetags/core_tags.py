@@ -14,3 +14,7 @@ def login_link(context):
         text = 'Login'
 
     return "<a href=\"%s\">%s</a>" % (url,text)
+
+@register.simple_tag()
+def internal_link(url, text):
+    return "<a href=\"%s\">%s</a>" % (url,text)

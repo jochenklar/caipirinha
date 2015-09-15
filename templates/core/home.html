@@ -1,8 +1,15 @@
 {% extends 'core/layout.html' %}
-{% load staticfiles %}
+{% load staticfiles core_tags %}
 
 {% block content %}
 
-Some content.
+<p>
+    {% internal_link '/registration/password-change/' 'Change Password' %}
+</p>
+
+<p>
+    {% internal_link '/registration/password-reset/' 'Reset password' %}
+</p>
+
 
 {% endblock %}
