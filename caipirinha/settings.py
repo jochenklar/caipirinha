@@ -15,7 +15,8 @@ INSTALLED_APPS = (
     'oidc_provider',
     # caipirinha modules
     'core',
-    'registration'
+    'registration',
+    'users'
 )
 
 MIDDLEWARE_CLASSES = (
